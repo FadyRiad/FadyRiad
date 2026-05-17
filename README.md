@@ -1,4 +1,4 @@
-# Hi there, I'm Fady Riad! 🚀
+# Hi there, I'm Fady Riad
 
 ### 👨‍💻 SDET & QA Automation Engineer | Computer Science Graduate
 
@@ -26,27 +26,3 @@
 | **Databases & Environment** | `SQL` · `MySQL` · `PostgreSQL` · `Linux Terminal (BASH)` |
 
 ---
-
-### 📊 Inside My Test Runner (An SDET's Perspective)
-
-```java
-import org.testng.annotations.*;
-import org.testng.Assert;
-
-public class FadyAutomationSuite {
-
-    @Test(description = "Execute regression testing and validate system stability")
-    public void test_System_Core_Functionality() {
-        fady.runAutomationFramework(); // Leveraging Selenium + SHAFT Engine
-        
-        boolean hasPassedValidations = fady.validateDataIntegrityAndUI();
-        Assert.assertTrue(hasPassedValidations, "Regression failure detected. Logged to Jira.");
-    }
-
-    @AfterMethod
-    public void debugLifecycle() {
-        if (system.hasDefects()) {
-            fady.extractLogsAndScreenshots(); // Root cause analysis starts here
-        }
-    }
-}
