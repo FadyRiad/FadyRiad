@@ -1,16 +1,52 @@
-## Hi there 👋
+# Hi there, I'm Fady Riad! 🚀
 
-<!--
-**FadyRiad/FadyRiad** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### 👨‍💻 SDET & QA Automation Engineer | Computer Science Graduate
 
-Here are some ideas to get you started:
+> "Writing clean, scalable automation frameworks to ensure software reliability and seamless production deployments."
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### 🧠 Executive Summary
+
+* 🎓 **Background:** Computer Science Graduate from Cairo University (Class of 2026), specializing in Software Engineering and Information Systems.
+* 🛡️ **Core Expertise:** Designing and implementing robust, enterprise-grade test automation frameworks using **Java**, **Selenium**, and **RestAssured**, while strictly adhering to **SOLID principles** and **Clean Architecture**.
+* ⚡ **Systems Thinking:** Strong foundation in low-level programming ($C/C++$), architecture, and embedded systems—giving me a deeper look into how software behaves under the hood.
+* 👥 **Leadership:** Proven experience as a QA Team Lead under the Digital Egypt Pioneers Initiative (DEPI), managing test cycles, triaging defects, and driving cross-functional communication.
+
+---
+
+### 🛠️ Technical Skill Set & Tools
+
+| Category | Technologies & Competencies |
+| :--- | :--- |
+| **Test Automation** | `Selenium WebDriver` · `RestAssured` · `SHAFT Engine` · `TestNG` · `JUnit 5` |
+| **Methodologies & QA** | `STLC / SDLC` · `Shift-Left Testing` · `API Testing (Postman)` · `CI/CD Integration` |
+| **Programming Languages** | `Java` · `JavaScript` · `Python` · `C` · `C++` |
+| **Build & Management** | `Maven` · `Gradle` · `Jira` · `Git / GitHub` |
+| **Databases & Environment** | `SQL` · `MySQL` · `PostgreSQL` · `Linux Terminal (BASH)` |
+
+---
+
+### 📊 Inside My Test Runner (An SDET's Perspective)
+
+```java
+import org.testng.annotations.*;
+import org.testng.Assert;
+
+public class FadyAutomationSuite {
+
+    @Test(description = "Execute regression testing and validate system stability")
+    public void test_System_Core_Functionality() {
+        fady.runAutomationFramework(); // Leveraging Selenium + SHAFT Engine
+        
+        boolean hasPassedValidations = fady.validateDataIntegrityAndUI();
+        Assert.assertTrue(hasPassedValidations, "Regression failure detected. Logged to Jira.");
+    }
+
+    @AfterMethod
+    public void debugLifecycle() {
+        if (system.hasDefects()) {
+            fady.extractLogsAndScreenshots(); // Root cause analysis starts here
+        }
+    }
+}
